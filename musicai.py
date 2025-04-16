@@ -75,7 +75,19 @@ st.markdown("""
     .music-card:hover {
         transform: scale(1.01);
     }
-    
+    h1 {
+        text-align: center;
+        animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #4CAF50, 0 0 30px #4CAF50;
+        }
+        to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #4CAF50, 0 0 40px #4CAF50;
+        }
+    }
     
 
     /* Floating notes animation */
