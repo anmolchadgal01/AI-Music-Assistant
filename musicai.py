@@ -278,6 +278,6 @@ elif app_mode == "Play a Song Preview":
 st.markdown("---")
 st.markdown("""
     <div style="text-align: center; color: gray;">
-        <p>AI Music Assistant powered by Gemini and Streamlit</p>
+        <p>AI Music Assistant Created by Anmol Chadgal, himanshu Kholiya, Farhan Ahmad</p>
     </div>
 """, unsafe_allow_html=True)
