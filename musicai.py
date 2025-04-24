@@ -263,7 +263,7 @@ elif app_mode == "Play a Song Preview":
                 if tracks:
                     first_track = tracks[0]
                     track_id = first_track['id']
-                    st.warning("No preview available for this track. But you can listen on Spotify:")
+                    st.warning("You can Fully listen it on Spotify:")
                     st.markdown(f"""
                         <iframe src="https://open.spotify.com/embed/track/{track_id}" 
                                 width="300" height="80" frameborder="0" allowtransparency="true" 
