@@ -130,7 +130,7 @@ st.markdown("""
 
 # Header
 st.title("🎵 AI Music Assistant")
-st.markdown("Discover music, get recommendations, and learn about music theory with AI!")
+st.markdown("Get recommendations, Music Search, Lyrics Analysis, Play a Song Preview and learn about music theory with AI!")
 
 # Gemini response
 def get_gemini_response(prompt):
