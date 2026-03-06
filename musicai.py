@@ -20,7 +20,8 @@ sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
 ))
 
 # Configure Google Gemini API
-client = genai.Client(api_key=google_api_key)
+genai.configure(api_key=google_api_key)
+model = genai.GenerativeModel('gemini-1.5-pro')
 
 # Streamlit UI setup
 st.set_page_config(page_title="AI Music Assistant", page_icon="🎵", layout="wide")
@@ -134,10 +135,7 @@ st.markdown("Get Recommendations, Music Search, Lyrics Analysis, Play a Song Pre
 # Gemini response
 def get_gemini_response(prompt):
     try:
-        response = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=prompt
-        )
+        response = model.generate_content(prompt)
         return response.text
     except Exception as e:
         return f"Error: {str(e)}"
