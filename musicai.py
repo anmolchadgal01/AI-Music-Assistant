@@ -21,7 +21,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
 
 # Configure Google Gemini API
 genai.configure(api_key=google_api_key)
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 # Streamlit UI setup
 st.set_page_config(page_title="AI Music Assistant", page_icon="🎵", layout="wide")
